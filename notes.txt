@@ -1,0 +1,14 @@
+In react, HTML code is written in JavaScript file(JSX)
+The JavaScript files and not explicitly mentioned in the index.html(main html) but it gets added when loading the page automatically because the html is transformed and then loaded
+React project uses a build process before it can be installed or used anywhere.
+Raw and unprocessed react code wont execute in the browser.
+The code will not be optimised/minified in production.
+Node JS and used behind the scenes to make sure your React code gets transformed.
+
+for import and export keywords to work in a JavaScript project you have to be using the module keyword in the index.html file. 
+<script src="assets/scripts/App.js" type="module"></script>
+
+in javascript you cannot have two default statements 
+
+in react, we must have one component/one javascript function per file. and this one component function is exported using the statement :
+	export default ComponentName;
