@@ -47,7 +47,7 @@ export default function () {
 console.log(user.name);
 user.greet();*/
 
-class User {
+/*class User {
     constructor(name, age) {
         this.name = name;
         this.age = age;
@@ -61,4 +61,87 @@ class User {
 const user1 = new User("Jane Doe", 25);
 console.log(user1.name);
 console.log(user1.age);
+*/
 
+/*const hobbies = ["Reading", "Traveling", "Cooking"];
+console.log(hobbies[0]);
+console.log(hobbies[1]);
+console.log(hobbies[2]);
+hobbies.push("Gaming");
+console.log(hobbies);
+
+const index = hobbies.findIndex((item) => {
+    return item === "Traveling";
+});
+
+console.log(index);
+
+const editedHobbies = hobbies.map((item) => item + "!");
+console.log(editedHobbies);
+
+const editedHobbies2 = hobbies.map((item) => ({ text: item }));
+console.log(editedHobbies2); */
+
+//destructuring an array
+/*const [firstName, lastName] = ["Max", "Joe"];
+console.log(firstName);
+console.log(lastName);
+*/
+
+//destructuring object
+
+/*const { name, age } = {
+    name: "Max",
+    age: 34
+};
+
+
+console.log(name);
+console.log(age);
+*/
+
+/*const hobbies = ["Reading", "Traveling"];
+const newHobbies = ["Cooking"];
+
+// here , prints arrays sepaerately but not merged
+ const plusHobbies = [hobbies, newHobbies];
+console.log(plusHobbies);
+//here ... is the spread operator which allows us to merge arrays
+const allHobbies = [...hobbies, ...newHobbies];
+console.log(allHobbies);
+*/
+//using spread operator with objects
+/*const user = {
+    name: "John",
+    age: 30
+};
+const extendedUser = {
+    isAdmin: true,
+    ...user, // this will merge the user object properties into extendedUser
+};
+*/
+//console.log(extendedUser);
+
+//control structures
+/*const password = prompt("Your password");
+
+if (password === "Hello") {
+    console.log("Hello works!")
+}
+else if (password === 'hello') {
+    console.log("hello works!")
+}
+else {
+    console.log('access not granted')
+}
+*/
+
+/*const hobbies = ["Running", "Sports"];
+
+for (const hobby of hobbies) {
+    console.log(hobby);
+}
+*/
+
+//const list = document.querySelector('ul');
+//list.remove();
