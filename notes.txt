@@ -1,3 +1,8 @@
+
+
+npm install --save-dev vite
+npm install
+npm run dev
 In react, HTML code is written in JavaScript file(JSX)
 The JavaScript files and not explicitly mentioned in the index.html(main html) but it gets added when loading the page automatically because the html is transformed and then loaded
 React project uses a build process before it can be installed or used anywhere.
@@ -111,6 +116,19 @@ It's very important to understand, that storeOrder still only takes one paramete
 The function would still be called like this:
 
 storeOrder({id: 5, currency: 'USD', amount: 15.99}); // one argument / value!
+
+dynamic values is mentioned in included in in src={} ->like this. we should not add quotes.
+we have the ability to import image file into javascript file in reactJS through import statements which is not allowed in traditional javascript.
+when we do this import, this file will be automatically included in build process and we will not loose this file.
+
+Props:- react uses props to pass data into components and use that data in the component.
+props are used to confifure components. react merges all the props into a single objects having key value pairs and that is passed to the component.
+you can include styling using the statement <section id="css class name"></section>
+
+function CoreConcepts({image, title, description}){
+return();
+}
+the above is called as object destructuring that will destructure the object based on the parameters
 
 
 
