@@ -130,5 +130,21 @@ return();
 }
 the above is called as object destructuring that will destructure the object based on the parameters
 
+"children" props contains any content you have between your component text
 
+value for an onClick event prop or any other event/eventHandler prop is a function : onClick={functionName} -- here the function must not be executed, i.e we must not add a () parentheses
 
+Important : react will only execute the Component funcition once when it is first encountered somewhere in your code.
+
+React concept called state is a way of telling the UI that it should be updated.
+
+we need to import the useState function to update UI is react. this is called React-hook - import {useState} from 'react';
+all the functions that start with 'use' in react projects are called hooks.
+
+1. Hooks can be called only inside a component function and not in any other functions/custom Hooks.
+2. hooks must be called only on the top levels. it must not be called in any nested code statements.
+
+State updates lead to new state value: current state value provided by react and the state updating function
+
+we can output array for data dynamically in reactjs. eg: {['hello','world']}
+we can also output an array for renderable data. eg {[<p>hello</p>, <p>world</p>]}
