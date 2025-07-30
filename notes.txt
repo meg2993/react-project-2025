@@ -195,3 +195,72 @@ not like this:
 function handleEditClick() {
     setIsEditing(!isEditing);
 }
+
+inline styling in jsx should be applied like below:
+export default function Header() {
+  return (
+    <header>
+      <img src={logo} alt="A canvas" />
+      <h1>ReactArt</h1>
+          <p style={{
+              color : 'red',
+              textAlign : 'left'
+          }} >A community of artists and art-lovers.</p>
+    </header>
+  );
+}
+
+Advantages of inline style :-
+quick and easy to add to jsx
+styles only affect the element to which you add them
+
+disadvantages of inline styles:-
+you need to know CSS
+you have to style and target every element individually
+no sepetation between css and jsx code.
+
+Vanilla CSS advantages and disadvantages:
+
+advantages:
+CSS code is decoupled from JSX code
+you write CSS code as you (maybe) know and (maybe) love it
+CSS code can be written by another developer who needs only a minimal amount of access to your JSX code
+
+disadvantages:
+CSS code is not scoped to components.
+CSS rules may clash accross components,(eg same CSS class name used in different components for different purposes).
+
+CSS modules : CSS modules are a method of locally scoping CSS classnames and animation names by default witin CSS files. This approach addresses the issue of global CSS scope and potential naming collision 
+in large scale applications particularly those built with component based framework like React JS and Vue JS
+
+
+CSS modules: advantages and disadvantages 
+
+advantages: 
+CSS code is decoupled from JSX code. 
+you write CSS code as you know .
+CSS codecan be written by another developer who needs minimal amount of acess to your JSX code. 
+CSS classes are scoped to the component which import them -> no CSS class name clashes.
+
+disadvantages :
+you need to know CSS
+you may end up with many relatively small CSS files in your project 
+
+Styled components : advantages and disadvantages 
+
+advantages:
+Quick and easy to add 
+you continue "thinking in react (configurable style functions)
+Styles are scoped to components -> no CSS rule clashes
+
+disadvantages:
+you need to know CSS
+no seperation between react and CSS
+you will end up using lot of wrapper components 
+
+
+Tailwind CSS:
+tailwind CSS is a CSS framework that can be used in any project, just not in react but any projects. 
+in tailwind we must add small utility classes to HTML elements to apply style step by step and therefore then style the overall components
+In addition, tailwind also sets upm the base style that effects the overall documents, but the main idea behind tailwind really is to add the utility classes. 
+you need not know CSS indorder to use tailwind css.
